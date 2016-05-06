@@ -26,7 +26,7 @@ myApp.controller('webController', ['$scope', function($scope) {
             link: "http://www.shyanneward.com", 
             imageSource: "svg/browser-shyanne.svg", 
             tileTitle: "www.shyanneward.com", 
-            tileText: "This was a project I completed so I could offer custom marketing material."
+            tileText: "This was a project I completed for my wife for her marketing business."
         },
         
         {
@@ -40,7 +40,7 @@ myApp.controller('webController', ['$scope', function($scope) {
             link: "#", 
             imageSource: "svg/browser-aplus-services.svg", 
             tileTitle: "FUTURE PROJECT!", 
-            tileText: "This is a project for my mothers business. This project is currently on hold."
+            tileText: "This is a project for my mother's business. This project is currently on hold."
         }
     ];
 }]);
@@ -52,21 +52,21 @@ myApp.controller('designController', ['$scope', function($scope) {
             link: "img/digital-dfts.jpg",
             imageSource: "svg/digital-dfts.svg", 
             tileTitle: "DFT Design Scheme", 
-            tileText: "This set of sample of DFT patches where designed as a proof of concept."
+            tileText: "This is a set of sample DFT patches that I designed as a proof of concept."
         },
         
         {
             link: "img/digital-ticket.jpg",
             imageSource: "svg/digital-ticket.svg", 
             tileTitle: "Zeta Phi Beta Ticket", 
-            tileText: "I created this ticket at the request of Dr. Linda Logan, the Dean of Student Life at Olivet College for her event with here Sorority at Michigan State University."
+            tileText: "I created this ticket at the request of Dr. Linda Logan, the Dean of Student Life at Olivet College."
         },
         
         {
             link: "img/digital-pinkpapaya.jpg",
             imageSource: "svg/digital-pinkpapaya.svg", 
             tileTitle: "Pink Papaya Marketing", 
-            tileText: "I created these markerting items for my wife's sales company."
+            tileText: "I created these markerting items for my wife's marketing business."
         }
     ];
 }]);
@@ -89,7 +89,7 @@ myApp.controller('brandingController', ['$scope', function($scope) {
         {
             imageSource: "svg/branding-mv.svg", 
             tileTitle: "Maple Valley", 
-            tileText: "This 'MV' logo was create as a proof on concept for my High School."
+            tileText: "This 'MV' logo was create as a proof of concept for my High School."
         }
     ];
 }]);
@@ -115,7 +115,7 @@ myApp.controller('educationController', ['$scope', function($scope) {
             link: "http://www.gatech.edu",
             imageSource: "svg/edu-gt.svg",
             tileTitle: "Georgia Tech", 
-            tileText: "I will start attending Geogia Tech in the Fall of 2016, where I will be pursuing my masters degree in Computer Science"
+            tileText: "I will start attending Geogia Tech in the Fall of 2016, where I will be pursuing my masters degree in Computer Science."
         }
     ];
 }]);
@@ -167,7 +167,7 @@ myApp.controller('employmentController', ['$scope', function($scope) {
             link: "http://www.ibm.com",
             imageSource: "svg/job-ibm.svg", 
             tileTitle: "IBM, Developer", 
-            tileText: "Hired as a Java Developer. Currently working as a Front-End Developer."
+            tileText: "I was hired as a Java Developer. I am Currently working as a Front-End Developer."
         }
     ];
 }]);
