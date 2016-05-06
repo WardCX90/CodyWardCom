@@ -1,0 +1,229 @@
+<!DOCTYLE html>
+<html xmlns:ng="http://angularjs.org" lang="en">
+<head>
+<!--TITLE-->
+    <title>Cody Ward's Digital Universe</title>
+
+<!--FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+        
+<!--META TAGS-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+<!--FONTS-->      
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+<!--STYLES-->      
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    
+</head>  
+<body ng-app="myApp" class="ng-cloak">
+    
+<!--HEADER-->
+    <header ng-contoller="headerController">
+        <div>
+            <a href="index.html" ><img src="svg/header.svg"></a>
+        </div>
+    </header>
+        
+<!--NAVBAR-->
+    <nav ng-controller="navController" class="navbar">
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li ng-repeat="x in nav"><a id="{{ x.id }}" href="{{ x.link }}"><i class="fa {{ x.fa }} fa-fw"></i> {{ x.label }}</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+<!--LANDING SECTION-->
+    <section class="section-container landing">
+        <div class="landing-content">
+            <h1>Welcome!</h1>
+            <div>   
+                <p>Thank you for taking the time to view my portfolio. My goal is to demonstrate my past work and future ambitions.</p>
+            </div>
+        </div> 
+    </section>
+
+<!--SECTION - WEB DEVELOPMENT-->
+    <span class="anchor" id="web-developement"></span>
+    <section ng-controller="webController" class="section-container web-developement">
+        <!--SECTION TITLE-->
+        <div class="section-title-container">
+            <h1>Web Development</h1>
+        </div>
+        <!--TILES-->
+        <div class="tile-container">
+            <div class="tile-content">
+                <div ng-repeat="x in section">
+                    <div class="tile">
+                        <div style="margin: 0 auto;">
+                            <a href="{{x.link}}" target="_blank">
+                                <div class="tile-image-container"><img src="{{x.imageSource}}"></div>
+                            </a>
+                            <div class="tile-title-container"><h2>{{x.tileTitle}}</h2></div>
+                            <div class="tile-content-container"><p>{{x.tileText}}</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--SECTION - DIGITAL DESIGNS-->
+    <span class="anchor" id="digital-designs"></span>
+    <section ng-controller="designController" class="section-container digital-designs">
+        <!--SECTION TITLE-->
+        <div class="section-title-container">
+            <h1>Digital Designs</h1>
+        </div>
+        <!--TILES-->
+        <div class="tile-container">
+            <div class="tile-content">
+                <div ng-repeat="x in section">
+                    <div class="tile">
+                        <a href="{{x.link}}" target="_blank">
+                            <div class="tile-image-container"><img src="{{x.imageSource}}"></div>
+                        </a>
+                        <div class="tile-title-container"><h2>{{x.tileTitle}}</h2></div>
+                        <div class="tile-content-container"><p>{{x.tileText}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--SECTION - BRANDING-->
+    <span class="anchor" id="branding"></span>
+    <section ng-controller="brandingController" class="section-container branding">
+        <!--SECTION TITLE-->
+        <div class="section-title-container">
+            <h1>Branding</h1>
+        </div>
+        <!--TILES-->
+        <div class="tile-container">
+            <div class="tile-content">
+                <div ng-repeat="x in section">
+                    <div class="tile">
+                        <a href="{{x.link}}" target="_blank">
+                            <div class="tile-image-container"><img src="{{x.imageSource}}"></div>
+                        </a>
+                        <div class="tile-title-container"><h2>{{x.tileTitle}}</h2></div>
+                        <div class="tile-content-container"><p>{{x.tileText}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--SECTION - EDUCATION-->
+    <span class="anchor" id="education"></span>
+    <section ng-controller="educationController" class="section-container education">
+        <!--SECTION TITLE-->
+        <div class="section-title-container">
+            <h1>Education</h1>
+        </div>
+        <!--TILES-->
+        <div class="tile-container">
+            <div class="tile-content">
+                <div ng-repeat="x in section">
+                    <div class="tile">
+                        <a href="{{x.link}}" target="_blank">
+                            <div class="tile-image-container"><img src="{{x.imageSource}}"></div>
+                        </a>
+                        <div class="tile-title-container"><h2>{{x.tileTitle}}</h2></div>
+                        <div class="tile-content-container"><p>{{x.tileText}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--SECTION - ACADEMIC AWARDS-->
+    <span class="anchor" id="awards"></span>
+    <section ng-controller="awardsController" class="section-container awards">
+        <!--SECTION TITLE-->
+        <div class="section-title-container">
+            <h1>Academic Awards</h1>
+        </div>
+        <!--TILES-->
+        <div class="tile-container">
+            <div class="tile-content">
+                <div ng-repeat="x in section">
+                    <div class="tile">
+                        <a href="{{x.link}}" target="_blank">
+                            <div class="tile-image-container"><img src="{{x.imageSource}}"></div>
+                        </a>
+                        <div class="tile-title-container"><h2>{{x.tileTitle}}</h2></div>
+                        <div class="tile-content-container"><p>{{x.tileText}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--SECTION - EMPLOYMENT HISTORY-->
+    <span class="anchor" id="employment"></span>
+    <section ng-controller="employmentController" class="section-container employment">
+        <!--SECTION TITLE-->
+        <div class="section-title-container">
+            <h1>Employment History</h1>
+        </div>
+        <!--TILES-->
+        <div class="tile-container">
+            <div class="tile-content">
+                <div ng-repeat="x in section">
+                    <div class="tile">
+                        <a href="{{x.link}}" target="_blank">
+                            <div class="tile-image-container"><img src="{{x.imageSource}}"></div>
+                        </a>
+                        <div class="tile-title-container"><h2>{{x.tileTitle}}</h2></div>
+                        <div class="tile-content-container"><p>{{x.tileText}}</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                   
+<!--FOOTER-->
+    <footer class="footer" ng-controller="footerController">
+        <div>
+            <h2 class="social-heading">Connect with me!</h2>
+            <div class="social-icons-container">
+                <div ng-repeat="x in footer" class="social">
+                    <a target="_blank" href="{{ x.url }}"><i id="{{ x.id }}" class="social-icons fa {{ x.fa }} {{ x.class }}"></i></a>
+                </div>
+            <!--Working on fix for Angular issue with Skype link-->
+                <div class="social">
+                    <a target="_blank" href="skype:WardCX90?add"><i id="skype" class="social-icons last-icon fa fa-skype"></i></a>
+                </div>
+            </div>
+            <div class="tagline">
+                <a target="_blank" href="cody-ward-resume.pdf" style="text-decoration: none;">
+                    <div class="resume-button">
+                        <p><i><span class="fa fa-file-pdf-o"></span></i>&nbsp;&nbsp;Resume</p>
+                    </div>
+                </a>
+                <p><i><span class="fa fa-envelope-o"></span></i>&nbsp;&nbsp;<a href="mailto:wardcx90@gmail.com">wardcx90@gmail.com</a></p>
+                <p><i><span class="fa fa-phone"></span></i>&nbsp;&nbsp;<a href="tel:269-331-9940">(269) 331-9940</a></p>
+                <p>2016 &copy; CODY WARD</p>
+            </div>
+        </div>
+    </footer>
+        
+<!--SCRIPT TAGS-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
